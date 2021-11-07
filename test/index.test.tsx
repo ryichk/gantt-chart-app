@@ -1,7 +1,7 @@
-import "@jest/globals";
+import '@jest/globals';
 
-describe("jest", () => {
-  test("true toBeTruthy", () => {
+describe('jest', () => {
+  test('true toBeTruthy', () => {
     expect(true).toBeTruthy();
   });
 });
