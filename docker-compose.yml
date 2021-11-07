@@ -4,7 +4,7 @@ services:
   app:
     build: .
     volumes:
-      - .:/web-front
+      - .:/gantt-chart-app
     command: yarn dev
     ports:
       - 8000:3000
@@ -13,7 +13,7 @@ services:
   storybook:
     build: .
     volumes:
-      - .:/web-front
+      - .:/gantt-chart-app
     command: yarn storybook
     ports:
       - 6006:6006
