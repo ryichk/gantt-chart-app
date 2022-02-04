@@ -1,0 +1,19 @@
+{
+  "trigger": true,
+  "modules": ["verification-link"],
+  "parentResource": "ganttchartapp",
+  "functionName": "ganttchartappCustomMessage",
+  "resourceName": "ganttchartappCustomMessage",
+  "parentStack": "auth",
+  "triggerEnvs": "[\n  {\n    \"key\": \"RESOURCENAME\",\n    \"value\": \"resourceName\"\n  }\n]",
+  "triggerDir": "/snapshot/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/CustomMessage",
+  "triggerTemplate": "CustomMessage.json.ejs",
+  "triggerEventPath": "CustomMessage.event.json",
+  "roleName": "ganttchartappCustomMessage",
+  "skipEdit": true,
+  "REDIRECTURL": "localhost:3000",
+  "EMAILSUBJECT": "Subject for your custom account confirmation email",
+  "EMAILMESSAGE": "Custom account confirmation link URL:",
+  "RESOURCENAME": "resourceName",
+  "enableCors": false
+}

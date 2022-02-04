@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": ["captcha-verify"],
+  "parentResource": "ganttchartapp",
+  "functionName": "ganttchartappVerifyAuthChallengeResponse",
+  "resourceName": "ganttchartappVerifyAuthChallengeResponse",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "/snapshot/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/VerifyAuthChallengeResponse",
+  "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+  "triggerEventPath": "VerifyAuthChallengeResponse.event.json",
+  "roleName": "ganttchartappVerifyAuthChallengeResponse",
+  "skipEdit": true,
+  "RECAPTCHASECRET": "",
+  "enableCors": false
+}
