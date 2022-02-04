@@ -1,0 +1,15 @@
+{
+  "trigger": true,
+  "modules": ["captcha-create-challenge"],
+  "parentResource": "ganttchartapp",
+  "functionName": "ganttchartappCreateAuthChallenge",
+  "resourceName": "ganttchartappCreateAuthChallenge",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "/snapshot/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/CreateAuthChallenge",
+  "triggerTemplate": "CreateAuthChallenge.json.ejs",
+  "triggerEventPath": "CreateAuthChallenge.event.json",
+  "roleName": "ganttchartappCreateAuthChallenge",
+  "skipEdit": true,
+  "enableCors": false
+}

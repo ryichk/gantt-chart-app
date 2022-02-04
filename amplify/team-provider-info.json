@@ -1,0 +1,43 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ganttchartapp-staging-191023-authRole",
+      "UnauthRoleArn": "arn:aws:iam::553258776374:role/amplify-ganttchartapp-staging-191023-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::553258776374:role/amplify-ganttchartapp-staging-191023-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-ganttchartapp-staging-191023-deployment",
+      "UnauthRoleName": "amplify-ganttchartapp-staging-191023-unauthRole",
+      "StackName": "amplify-ganttchartapp-staging-191023",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:553258776374:stack/amplify-ganttchartapp-staging-191023/58417230-8410-11ec-a64f-0ea30bf5e6c3",
+      "AmplifyAppId": "ddqp1rqiyjq67",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-ganttchartapp-staging-191023-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "ganttchartapp": {}
+      },
+      "function": {
+        "ganttchartappDefineAuthChallenge": {
+          "deploymentBucketName": "amplify-ganttchartapp-staging-191023-deployment",
+          "s3Key": "amplify-builds/ganttchartappDefineAuthChallenge-494d783959576c597a78-build.zip"
+        },
+        "ganttchartappCreateAuthChallenge": {
+          "deploymentBucketName": "amplify-ganttchartapp-staging-191023-deployment",
+          "s3Key": "amplify-builds/ganttchartappCreateAuthChallenge-444c47376e6338737737-build.zip"
+        },
+        "ganttchartappVerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": "",
+          "deploymentBucketName": "amplify-ganttchartapp-staging-191023-deployment",
+          "s3Key": "amplify-builds/ganttchartappVerifyAuthChallengeResponse-43384d534846506c4c58-build.zip"
+        },
+        "ganttchartappCustomMessage": {
+          "REDIRECTURL": "localhost:3000",
+          "EMAILSUBJECT": "Subject for your custom account confirmation email",
+          "EMAILMESSAGE": "Custom account confirmation link URL:",
+          "deploymentBucketName": "amplify-ganttchartapp-staging-191023-deployment",
+          "s3Key": "amplify-builds/ganttchartappCustomMessage-6d4e5a34384339745950-build.zip"
+        }
+      }
+    }
+  }
+}

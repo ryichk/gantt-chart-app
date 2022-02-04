@@ -1,0 +1,74 @@
+{
+  "function": {
+    "ganttchartappDefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ganttchartappCreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ganttchartappVerifyAuthChallengeResponse": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ganttchartappCustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "auth": {
+    "ganttchartapp": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "ganttchartappDefineAuthChallenge",
+          "triggerProvider": "Cognito",
+          "attributes": ["Arn", "Name"]
+        },
+        {
+          "category": "function",
+          "resourceName": "ganttchartappCreateAuthChallenge",
+          "triggerProvider": "Cognito",
+          "attributes": ["Arn", "Name"]
+        },
+        {
+          "category": "function",
+          "resourceName": "ganttchartappVerifyAuthChallengeResponse",
+          "triggerProvider": "Cognito",
+          "attributes": ["Arn", "Name"]
+        },
+        {
+          "category": "function",
+          "resourceName": "ganttchartappCustomMessage",
+          "triggerProvider": "Cognito",
+          "attributes": ["Arn", "Name"]
+        }
+      ],
+      "customAuth": true,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": ["EMAIL"],
+        "signupAttributes": ["EMAIL"],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": "12",
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+          ]
+        },
+        "mfaConfiguration": "OPTIONAL",
+        "mfaTypes": ["SMS"],
+        "verificationMechanisms": ["EMAIL"]
+      }
+    }
+  }
+}
